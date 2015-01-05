@@ -1,0 +1,37 @@
+{
+  "ProjectName": "Kendo UI Project",
+  "ProjectGuid": "069eb2cd-c013-441c-8abe-1f5b69d71775",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.KendoUIProject",
+  "DisplayName": "Kendo UI Project",
+  "Author": "",
+  "Description": "",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "3.5.0",
+  "AndroidPermissions": [],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "false",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{cba44d99-d900-4fcc-a2dc-90ee9d8c70ca}",
+  "WP8ProductID": "{9e1a5839-3bd1-4c16-80bf-da3f41610082}",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ]
+}
