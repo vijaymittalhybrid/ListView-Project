@@ -3,14 +3,66 @@
 <head>
     <title></title>
     <meta charset="utf-8" />
-    <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
-
+    <link href="kendo/styles/kendo.common.min.css" rel="stylesheet" />    
+    <link href="kendo/styles/kendo.default.min.css" rel="stylesheet" />    
+    <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />    
+    <link href="style/main.css" rel="stylesheet"/>
+    
     <script src="cordova.js"></script>
     <script src="kendo/js/jquery.min.js"></script>
-    <script src="kendo/js/kendo.mobile.min.js"></script>
-    
+    <script src="kendo/js/kendo.all.min.js"></script>
+    <script src="script/app/app.js"></script>
+    <script src="script/app/dashboard.js"></script>
 </head>
 <body>
+    
+    <!--Flat Widget View-->
+    <div data-role="view" data-layout="widgetLayout" data-title="Kendo UI" id="flatView" data-model="app.kendoUI.viewModel"> 
+        <!--Content-->
+        <div data-role="content">
+            <ul data-role="listview" data-bind="source:WidgetFlatDataSource" data-template="widgetFlatListView"></ul>
+        </div>
+    </div>
+    
+    <!--Group Widget View-->
+    <div data-role="view" data-layout="widgetLayout" data-title="Kendo UI" id="groupView" data-model="app.kendoUI.viewModel">
+        <ul data-role="listview" data-bind="source:WidgetGroupDataSource" data-template="widgetGroupListView" data-fixed-headers="true" data-header-template="widgetGroupHeader"></ul>
+    </div>
+    
+    
+    <!--Layout-->
+    <div data-role="layout" data-id="widgetLayout">
+        <!--Header-->
+        <div data-role="header">
+            <div data-role="navbar" class="">
+                <span data-role="view-title"></span>
+            </div>
+        </div>
+        <!--Footer-->
+        <div data-role="footer">
+            <div data-role="tabstrip">
+                <a href="#groupView" data-role="button" data-icon="organize">Group</a>
+                <a href="#flatView" data-role="button" data-icon="stop">Flat</a>
+            </div>
+        </div>
+    </div>
+    
+    <!--Flat Listview Template-->
+    <script type="text/x-kendo-tmpl" id="widgetFlatListView">
+       <span data-bind="click:hello">#:name#</span>
+    </script>
+    
+    <!--Group Listview Template-->
+    <script type="text/x-kendo-tmpl" id="widgetGroupListView">
+        <span data-bind="click:hello">#:name#</span>
+    </script>
+    
+    <!--Group Header Template-->
+    <script type="text/x-kendo-tmpl" id="widgetGroupHeader">
+        <span>#:value#</span>
+    </script>
+
+    <!--Script File place here-->
     
 </body>
 </html>
