@@ -7,12 +7,6 @@
     <link href="kendo/styles/kendo.default.min.css" rel="stylesheet" />    
     <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />    
     <link href="style/main.css" rel="stylesheet"/>
-    
-    <script src="cordova.js"></script>
-    <script src="kendo/js/jquery.min.js"></script>
-    <script src="kendo/js/kendo.all.min.js"></script>
-    <script src="script/app/app.js"></script>
-    <script src="script/app/dashboard.js"></script>
 </head>
 <body>
     
@@ -49,7 +43,7 @@
     
     <!--Flat Listview Template-->
     <script type="text/x-kendo-tmpl" id="widgetFlatListView">
-       <span data-bind="click:hello">#:name#</span>
+       <a href="views/#:id#.html"><span>#:name#</span></a>
     </script>
     
     <!--Group Listview Template-->
@@ -61,8 +55,14 @@
     <script type="text/x-kendo-tmpl" id="widgetGroupHeader">
         <span>#:value#</span>
     </script>
-
-    <!--Script File place here-->
     
+    
+    <!------------------------------------------------------------------------------------------------------------------>
+    <!--Script File place here-->
+    <script src="cordova.js"></script>
+    <script src="kendo/js/jquery.min.js"></script>
+    <script src="kendo/js/kendo.all.min.js"></script>
+    <script src="script/app/app.js"></script>
+    <script src="script/app/dashboard.js"></script>
 </body>
 </html>

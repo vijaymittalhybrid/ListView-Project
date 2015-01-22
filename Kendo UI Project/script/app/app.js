@@ -3,7 +3,7 @@
     
     apps = new kendo.mobile.Application(document.body,
                                                         {
-                                                            skin:"",
+                                                            skin:"flat",
                                                             initial:"groupView"
                                                         }
     );
